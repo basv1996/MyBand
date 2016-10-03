@@ -1,0 +1,100 @@
+/*
+ * Dit is de custom style sheet van jouw website
+ *
+ */
+
+html, body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0; 
+  background-image: url(../image/ocean_SandBeach.jpg);
+  background-position: center center;
+  background-repeat:no-repeat ;
+  background-attachment:fixed;
+  background-size: 100% 100% ;
+  bottom: 0;}
+
+.desc {
+	background-color: #fff;
+	border: 1px solid #000;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: -20px;
+	width: 200px;	
+}
+
+.mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+    top: 0;
+}
+
+  div {
+    display: none;
+  }
+
+  button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background: rgba(255,255,255,.8) url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    transition: all 400ms ease;
+    &.expanded
+      transform: rotate(90deg);
+      background-color: transparent;
+      border: 0; }
+  a {
+    display: block;
+  }
+
+a {
+  background-color: rgba(110,204,188,0.8);
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  &:hover, &:active, &:focus
+    background: darken(#eee, 3%);
+}
+
+.desktop {
+  display: block;
+    overflow: hidden; }
+
+  a {
+    width: 20%;
+    float: left;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    &:last-child
+      border-right: none;
+  }
+
+article {
+  padding: 0 30px 15px;
+}
+
+
+@media (max-width: 800px) {
+  .mobile {
+      display: block; }
+  .desktop {
+      display: none; }
+}
+
+
+/*footer{
+rgb(255,109,109)
+}*/
