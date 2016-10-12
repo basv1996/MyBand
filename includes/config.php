@@ -15,4 +15,9 @@ define('DB_NAME','myband');
 define('DB_USERNAME','root');
 define('DB_PASSWORD','');
 
+//database online
+//define('DB_HOST','localhost');
+//define('DB_NAME','21248_MyBand');
+//define('DB_USERNAME','21248_MyBand');
+//define('DB_PASSWORD','gqjkdyha');
 ?>
