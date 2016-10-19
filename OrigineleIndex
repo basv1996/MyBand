@@ -3,7 +3,6 @@
 // Get username, password from database
 include 'includes/config.php';
 // Load Smarty library
-
 require 'libs/Smarty.class.php';
 // Initialize
 include 'includes/bootstrap.php';
@@ -12,7 +11,6 @@ include 'includes/database.php';
 // include funtions
 include 'includes/funcs.php';
 //include select newsartciles
-
 
 // Assign value of page title to the smarty variable 'title', usually the value comes from a database
 $templateParser->assign('title', 'Titeltje');
@@ -35,20 +33,8 @@ include('model/select_newsarticles.php');
 $templateParser->assign('result',$result);
 $templateParser->display('newsarticles.tpl');
 break;
-    case 'band':
-        include('model/select_bandleden.php');
-        $templateParser->assign('result2',$result2);
-        $templateParser->display('band.tpl');
-break;
-    case 'tour':
-        include('model/select_tour.php');
-        $templateParser->assign('result3',$result3);
-        $templateParser->display('tour.tpl');
-break;
-    case 'shop':
-        include('model/select_shop.php');
-        $templateParser->assign('result4',$result4);
-        $templateParser->display('shop.tpl');
+    case 'about':
+$templateParser->display('about.tpl');
 
 //$page=isset($_GET['page'])?$_GET['page']:'home';
 //$templateParser->assign('page',$page);
@@ -80,7 +66,6 @@ break;
 
 
 }
-
 $templateParser->assign('footer', 'Made By Bas Vugts <br>In cooperation With MediaCollege Amsterdam <br>
 School-Project 2016-2017');
 //de footer

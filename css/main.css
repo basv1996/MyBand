@@ -23,25 +23,36 @@ html, body{
 	width: 200px;	
 }
 
-.mobile {
-  display: none;
-  position: fixed;
-  width: 100%;
-    top: 0;
-}
-
 /*foto en titel */
 #left {
- float: left;   
+ float: left; 
+    margin-bottom: 1em;
 }
 
 #left img {
 width: 50%;  
 }
 
+#left content, #left p {
+    float: right;
+    padding-right: 10%;   
+}
+
 /*descriptie en datum */
 #right{
+
 float: right;
+     margin-bottom: 1em;
+}
+#right h1 {
+    text-align: right;
+    padding-right: 5px;
+    
+}
+
+#right content, #right p {
+    float: left;
+    padding-left: 10%;   
 }
 
 #right img {
@@ -49,63 +60,7 @@ width: 50%;
     float: right;
 }
 
-  button {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    border: 0;
-    text-indent: 200%;
-    overflow: hidden;
-    background: rgba(255,255,255,.8) url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    background-size: 80%;
-    width: 30px;
-    height: 30px;
-    outline: none;
-    transition: all 400ms ease;
-    &.expanded
-      transform: rotate(90deg);
-      background-color: transparent;
-      border: 0; 
-  }
-button:hover {
-    cursor: pointer;
-}
-  a {
-    display: block;
-  }
 
-a {
-  background-color: rgb(109,200,204);
-  text-align: center;
-  padding: 15px 0 15px;
-  /*border-bottom: 1px solid #000;*/
-  text-decoration: none;
-  color: #222;
-  font-weight: bold;
-}
-a:hover, a:active, a:focus {
-    background-color: rgb(109,245,204)
-    /*background: darken(#eee, 3%)*/;
-}
-
-.desktop {
-  display: block;
-    overflow: hidden; }
-
-  a {
-    width: 20%;
-    float: left;
-    border-right: 1px solid #000;
-    box-sizing: border-box;
-    &:last-child
-      border-right: none;
-  }
-
-article {
-  padding: 0 30px 15px;
-}
 
 #LogoHeader {
     width: 100px;
@@ -116,30 +71,83 @@ article {
     width: 100%;
 }
 
-
-img {
-    width: 50%;   
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(109,200,204);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-footer{
-background-color:  rgb(255,109,109);
-padding: 20px;
-    text-align: center;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
     position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-    
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
 }
 
 @media (max-width: 800px) {
-  .mobile {
-      display: block; }
-  .desktop {
-      display: none; }
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+    #left img, #right img {
+        width: 100%;}
+     p { 
+        color: blue;
+     text-align: center}
+    h1, #right h1 {
+        text-align: center;}
+    #left content {
+        margin-left: auto;
+        margin-right: auto;
+        color: pink;
+        padding-left: 10%;
+    }
+    #right content {
+        text-align: center;
+        color:darkviolet;
+        padding-left: 10%;
+    }
 }
+
+
+
+footer{
+background-color: rgb(255,109,109);
+padding: 20px;
+text-align: center;
+    clear: both;
+    position: relative;
+    z-index: 10;    
+}
+
 
 
 /*footer{
 rgb(255,109,109)
 }*/
+
+

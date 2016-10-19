@@ -1,0 +1,60 @@
+#BandlidLinks img, #BandlidRechts img {
+    width: 80%;
+    margin: 0 10%;
+}
+
+/*#BandlidLinks content, #BandlidRechts content {
+    background-color: rgba(240,240,240,0.8);
+}*/
+
+.container { 
+    padding: 2.5% 5%;
+    width: 70%;
+    margin: 5% auto;
+    color: black;
+    background-color: rgba(240,240,240,0.8);}
+
+footer {
+    margin-top: 5%; 
+}
+
+#informatietekst {
+    color: black;
+}
+
+#video1, #video2, #YTVid {
+    width: 90%;
+    margin: 5% 5%;
+}
+
+@media screen and (min-width:850px) {
+    #BandlidLinks {
+        float: left;
+    margin-bottom: 1em;}
+    #BandlidLinks img {
+        width: 600px;
+        float: left;}
+    #BandlidRechts {
+        float: right;
+    margin-bottom: 1em;}
+    #BandlidRechts img {
+        width: 600px;
+        float: right}
+    #containerBig {
+        width: auto;}
+    h1 {
+        font-family: cursive;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    #video1, #video2  {
+    width: 39%;
+    display: inline-block;
+    }
+    #video1 h2, #video2 h2 {
+        text-align: center;
+        
+    }
+    
+}

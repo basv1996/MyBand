@@ -1,6 +1,7 @@
 <?php
 
-$result = $mysqli->query("SELECT * FROM newsarticles");
+$result = $mysqli->query("SELECT * FROM newsarticles ORDER BY date_created DESC");
+
 
 $result = convertResultToArray($result);
 ?>

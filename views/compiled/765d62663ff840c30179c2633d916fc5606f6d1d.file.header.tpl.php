@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-12 14:44:10
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-14 14:08:51
          compiled from "views\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:745657ee55d7da8ac1-49959904%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '765d62663ff840c30179c2633d916fc5606f6d1d' => 
     array (
       0 => 'views\\header.tpl',
-      1 => 1476276249,
+      1 => 1476446930,
       2 => 'file',
     ),
   ),
@@ -20,28 +20,31 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_57ee55d7ddc938_28698092')) {function content_57ee55d7ddc938_28698092($_smarty_tpl) {?><script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<meta name="viewport" content="width=device-width">
 <img id="HeaderPic" src="image/Side2SideBigBanner.png">
-<nav class="desktop">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a id="Search" href="?action=search"><input type="text" class=serach-query placeholder="Search" autocomplete="off"></a>
   <a id="Home" href="index.php"><img id="LogoHeader" alt="Side2Side" src="image/Side2SidePhotoshopped4.png" </a>
-  <a id="Band" href="?action=about">Band</a>
+  <a id="Band" href="?action=band">Band</a>
   <a id="Tour" href="?action=tour">Tour</a>
   <a id="Shop" href="?action=shop">Shop</a>
-  <a id="Search" href="?action=search">Search</a>
-</nav>
+  
+</div>
 
-<nav class="mobile">
-  <button>Toggle</button>
-  <div>
-    <a id="Home" href="#">Mobile 1</a>
-    <a id="Band" href="#">Mobile 2</a>
-    <a id="Tour" href="#">Mobile 3</a>
-    <a id="Shop" href="#">Mobile 4</a>
-    <a id="Search" href="#">Mobile 5</a>
-  </div>
-</nav>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
 
 <script>
-$('button').click(function() {
- $(this).toggleClass('expanded').siblings('div').slideToggle();
-});</script>
-<?php }} ?>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script><?php }} ?>
