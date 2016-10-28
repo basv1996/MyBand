@@ -30,37 +30,56 @@ html, body{
 }
 
 #left img {
-width: 50%;  
+width: 49%; 
+    padding-left: 1%;
 }
 
-#left content, #left p {
+#left content {
+    width: 45%;
     float: right;
-    padding-right: 10%;   
+    margin-right: 1%;
+    border: 1px solid black;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#left p {
+    padding-left: 5%;
 }
 
-/*descriptie en datum */
-#right{
+#left h1 {
+    padding-left: 5%;
+    margin-top: 5%;
+}
 
+#right{
 float: right;
      margin-bottom: 1em;
 }
 #right h1 {
     text-align: right;
-    padding-right: 5px;
-    
+    padding-right: 5%;
+    margin-top: 5%;
 }
 
-#right content, #right p {
+#right content {
+    width: 45%;
     float: left;
-    padding-left: 10%;   
+    margin-left: 1%;
+    border: 1px solid black;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#right p {
+    float: right;
+    padding-right: 5%;
 }
 
 #right img {
-width: 50%;
+width: 49%;
+    padding-right: 1%;
     float: right;
 }
-
-
 
 #LogoHeader {
     width: 100px;
@@ -110,27 +129,48 @@ width: 50%;
     padding: 16px;
 }
 
+ ul {
+        list-style-type: none;
+     margin-left: 37%;
+    }
+   #PageInation li {
+        display: inline;  
+    }
+    #PageInation li a {
+        width: 25%;
+        text-align: center;
+        text-decoration: none;
+        
+    }
+/* hieronder voor mobile*/
 @media (max-width: 800px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+    
     #left img, #right img {
-        width: 100%;}
-     p { 
+        width: 98%;
+    }
+     #right p, #left p { 
         color: blue;
      text-align: center}
     h1, #right h1 {
-        text-align: center;}
+        text-align: center;
+    }
+    
     #left content {
+        width: 96%;
+        margin-top: 2%;
         margin-left: auto;
         margin-right: auto;
-        color: pink;
-        padding-left: 10%;
     }
+    
     #right content {
-        text-align: center;
+        width: 95%;
+         margin-top: 2%;
+        margin-left: 1%;
         color:darkviolet;
-        padding-left: 10%;
     }
+    
 }
 
 
@@ -141,7 +181,8 @@ padding: 20px;
 text-align: center;
     clear: both;
     position: relative;
-    z-index: 10;    
+    z-index: 10;  
+    margin-top: 5%;
 }
 
 

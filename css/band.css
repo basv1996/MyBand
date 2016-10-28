@@ -27,6 +27,14 @@ footer {
     margin: 5% 5%;
 }
 
+h3 {
+    text-align: center;
+    font-size: 48;
+    font-family: fantasy;
+    
+}
+
+
 @media screen and (min-width:850px) {
     #BandlidLinks {
         float: left;

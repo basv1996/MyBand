@@ -22,4 +22,6 @@ define('DB_NAME','21248_MyBand');
 define('DB_USERNAME','21248_MyBand');
 define('DB_PASSWORD','gqjkdyha');
 */
+
+define('NR_ITEMS_PER_PAGE',2)
 ?>

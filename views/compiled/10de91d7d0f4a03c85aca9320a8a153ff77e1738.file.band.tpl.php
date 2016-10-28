@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-18 19:14:01
+<?php /* Smarty version Smarty-3.1.18, created on 2016-10-25 19:16:59
          compiled from "views\band.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2934458009de77dd4f0-85508864%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '10de91d7d0f4a03c85aca9320a8a153ff77e1738' => 
     array (
       0 => 'views\\band.tpl',
-      1 => 1476810838,
+      1 => 1477415817,
       2 => 'file',
     ),
   ),
@@ -63,6 +63,7 @@ $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
     <?php $_smarty_tpl->tpl_vars['i'] = new Smarty_variable(0, null, 0);?>
     <?php }?>
    <?php } ?>
+   <div id="videos">
    <div id="video1">
      <h2>Küss Mich Jetzt</h2>
       <iframe id="YTVid" src="https://www.youtube.com/embed/SwvylVmTgGo" frameborder="0" allowfullscreen></iframe>
@@ -71,6 +72,7 @@ $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
       <h2>Side 2 Side - Forget My Name ft René Froger</h2>
       <iframe id="YTVid" src="https://www.youtube.com/embed/ETQ-n4FMhCU" frameborder="0" allowfullscreen></iframe> 
    </div>
+    </div>
 </section>
 
 

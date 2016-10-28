@@ -4,7 +4,7 @@
  {foreach from=$result2 item=oneItem}
  {if $i==0}
  <div id="BandlidLinks">
-  <h1>{$oneItem.Name}</h1>
+  <h1>{$oneItem.name}</h1>
   <div id="containerBig">
   <img src={$oneItem.profileImage}>    
   <div class="container">
@@ -15,7 +15,7 @@
     {$i=1}
     {else}
     <div id="BandlidRechts">
-  <h1>{$oneItem.Name}</h1>
+  <h1>{$oneItem.name}</h1>
   <div id="containerBig">
   <img src={$oneItem.profileImage}>    
   <div class="container">
@@ -26,6 +26,7 @@
     {$i=0}
     {/if}
    {/foreach}
+   <div id="videos">
    <div id="video1">
      <h2>Küss Mich Jetzt</h2>
       <iframe id="YTVid" src="https://www.youtube.com/embed/SwvylVmTgGo" frameborder="0" allowfullscreen></iframe>
@@ -34,6 +35,7 @@
       <h2>Side 2 Side - Forget My Name ft René Froger</h2>
       <iframe id="YTVid" src="https://www.youtube.com/embed/ETQ-n4FMhCU" frameborder="0" allowfullscreen></iframe> 
    </div>
+    </div>
 </section>
 
 

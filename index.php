@@ -27,13 +27,13 @@ $action=isset($_GET['action'])?$_GET['action']:'home';
 
 switch ($action) {
     case 'home':
-
-// Get newsarticles from database
-include('model/select_newsarticles.php');
-
-// Display template: output html
-$templateParser->assign('result',$result);
-$templateParser->display('newsarticles.tpl');
+        $page_nr = isset($_GET['page_nr'])?$_GET['page_nr']:1;
+        include('model/select_newsarticles.php');
+        $templateParser->assign('result',$result);
+        //calculate total number of articles
+        include('model/get_nr_articles.php');
+        $templateParser->assign('total_number_articles',$total_number_articles);
+        $templateParser->display('newsarticles.tpl');
 break;
     case 'band':
         include('model/select_bandleden.php');
