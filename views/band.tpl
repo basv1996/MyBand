@@ -32,7 +32,7 @@
       <iframe id="YTVid" src="https://www.youtube.com/embed/SwvylVmTgGo" frameborder="0" allowfullscreen></iframe>
     </div>
      <div id="video2">
-      <h2>Side 2 Side - Forget My Name ft René Froger</h2>
+      <h2>Forget My Name ft René Froger</h2>
       <iframe id="YTVid" src="https://www.youtube.com/embed/ETQ-n4FMhCU" frameborder="0" allowfullscreen></iframe> 
    </div>
     </div>

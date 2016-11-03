@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-28 12:51:19
+<?php /* Smarty version Smarty-3.1.18, created on 2016-11-03 13:44:07
          compiled from "views\newsarticles.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1198957f4f719aa09e0-87903696%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd2104d91d134b1ddf013f0f614b9454791a8acef' => 
     array (
       0 => 'views\\newsarticles.tpl',
-      1 => 1477651877,
+      1 => 1478177045,
       2 => 'file',
     ),
   ),
@@ -68,9 +68,9 @@ $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
    <?php } ?>
 </section>
 
-<ul>
  <div id="PageInation">
-  <?php $_smarty_tpl->tpl_vars['foo'] = new Smarty_Variable;$_smarty_tpl->tpl_vars['foo']->step = 1;$_smarty_tpl->tpl_vars['foo']->total = (int) ceil(($_smarty_tpl->tpl_vars['foo']->step > 0 ? $_smarty_tpl->tpl_vars['total_number_articles']->value+1 - (1) : 1-($_smarty_tpl->tpl_vars['total_number_articles']->value)+1)/abs($_smarty_tpl->tpl_vars['foo']->step));
+ <ul>
+      <?php $_smarty_tpl->tpl_vars['foo'] = new Smarty_Variable;$_smarty_tpl->tpl_vars['foo']->step = 1;$_smarty_tpl->tpl_vars['foo']->total = (int) ceil(($_smarty_tpl->tpl_vars['foo']->step > 0 ? $_smarty_tpl->tpl_vars['total_number_articles']->value+1 - (1) : 1-($_smarty_tpl->tpl_vars['total_number_articles']->value)+1)/abs($_smarty_tpl->tpl_vars['foo']->step));
 if ($_smarty_tpl->tpl_vars['foo']->total > 0) {
 for ($_smarty_tpl->tpl_vars['foo']->value = 1, $_smarty_tpl->tpl_vars['foo']->iteration = 1;$_smarty_tpl->tpl_vars['foo']->iteration <= $_smarty_tpl->tpl_vars['foo']->total;$_smarty_tpl->tpl_vars['foo']->value += $_smarty_tpl->tpl_vars['foo']->step, $_smarty_tpl->tpl_vars['foo']->iteration++) {
 $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration == 1;$_smarty_tpl->tpl_vars['foo']->last = $_smarty_tpl->tpl_vars['foo']->iteration == $_smarty_tpl->tpl_vars['foo']->total;?>
@@ -78,5 +78,6 @@ $_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration 
 "><?php echo $_smarty_tpl->tpl_vars['foo']->value;?>
 </a></li>
 <?php }} ?>
+     </ul>
     </div>
-</ul><?php }} ?>
+<?php }} ?>

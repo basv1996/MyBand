@@ -103,6 +103,15 @@ width: 49%;
     padding-top: 60px;
 }
 
+.sidenav ul {
+    list-style-type: none;
+    margin-left: -16%;  
+}
+
+.sidenav ul li  {
+    list-style-type: none;
+}
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -113,7 +122,7 @@ width: 49%;
 }
 
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: blue;
 }
 
 .sidenav .closebtn {
@@ -125,23 +134,26 @@ width: 49%;
 }
 
 #main {
-    transition: margin-left .5s;
+    transition: .5s;
     padding: 16px;
 }
 
- ul {
-        list-style-type: none;
-     margin-left: 37%;
+    #PageInation li {
+        display: inline;          
     }
-   #PageInation li {
-        display: inline;  
-    }
-    #PageInation li a {
-        width: 25%;
+    #PageInation ul li a {
         text-align: center;
         text-decoration: none;
-        
+        margin: 10%;
     }
+#PageInation a:hover {
+    color: red; 
+}
+
+#txtHint {
+    margin-left: 5%;
+    
+}
 /* hieronder voor mobile*/
 @media (max-width: 800px) {
   .sidenav {padding-top: 15px;}
@@ -168,12 +180,8 @@ width: 49%;
         width: 95%;
          margin-top: 2%;
         margin-left: 1%;
-        color:darkviolet;
     }
-    
 }
-
-
 
 footer{
 background-color: rgb(255,109,109);
@@ -184,11 +192,3 @@ text-align: center;
     z-index: 10;  
     margin-top: 5%;
 }
-
-
-
-/*footer{
-rgb(255,109,109)
-}*/
-
-

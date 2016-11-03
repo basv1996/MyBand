@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-25 19:16:59
+<?php /* Smarty version Smarty-3.1.18, created on 2016-11-03 09:54:16
          compiled from "views\band.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2934458009de77dd4f0-85508864%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '10de91d7d0f4a03c85aca9320a8a153ff77e1738' => 
     array (
       0 => 'views\\band.tpl',
-      1 => 1477415817,
+      1 => 1478163253,
       2 => 'file',
     ),
   ),
@@ -35,7 +35,7 @@ $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
 ?>
  <?php if ($_smarty_tpl->tpl_vars['i']->value==0) {?>
  <div id="BandlidLinks">
-  <h1><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['Name'];?>
+  <h1><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['name'];?>
 </h1>
   <div id="containerBig">
   <img src=<?php echo $_smarty_tpl->tpl_vars['oneItem']->value['profileImage'];?>
@@ -49,7 +49,7 @@ $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
     <?php $_smarty_tpl->tpl_vars['i'] = new Smarty_variable(1, null, 0);?>
     <?php } else { ?>
     <div id="BandlidRechts">
-  <h1><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['Name'];?>
+  <h1><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['name'];?>
 </h1>
   <div id="containerBig">
   <img src=<?php echo $_smarty_tpl->tpl_vars['oneItem']->value['profileImage'];?>
@@ -69,7 +69,7 @@ $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
       <iframe id="YTVid" src="https://www.youtube.com/embed/SwvylVmTgGo" frameborder="0" allowfullscreen></iframe>
     </div>
      <div id="video2">
-      <h2>Side 2 Side - Forget My Name ft René Froger</h2>
+      <h2>Forget My Name ft René Froger</h2>
       <iframe id="YTVid" src="https://www.youtube.com/embed/ETQ-n4FMhCU" frameborder="0" allowfullscreen></iframe> 
    </div>
     </div>

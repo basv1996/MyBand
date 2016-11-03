@@ -23,10 +23,10 @@
    {/foreach}
 </section>
 
-<ul>
  <div id="PageInation">
-  {for $foo=1 to $total_number_articles}
+ <ul>
+      {for $foo=1 to $total_number_articles}
      <li><a href="?action=home&page_nr={$foo}">{$foo}</a></li>
 {/for}
+     </ul>
     </div>
-</ul>

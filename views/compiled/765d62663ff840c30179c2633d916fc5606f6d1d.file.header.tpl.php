@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-14 14:08:51
+<?php /* Smarty version Smarty-3.1.18, created on 2016-11-02 15:53:28
          compiled from "views\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:745657ee55d7da8ac1-49959904%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '765d62663ff840c30179c2633d916fc5606f6d1d' => 
     array (
       0 => 'views\\header.tpl',
-      1 => 1476446930,
+      1 => 1478098407,
       2 => 'file',
     ),
   ),
@@ -25,11 +25,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a id="Search" href="?action=search"><input type="text" class=serach-query placeholder="Search" autocomplete="off"></a>
+ 
   <a id="Home" href="index.php"><img id="LogoHeader" alt="Side2Side" src="image/Side2SidePhotoshopped4.png" </a>
   <a id="Band" href="?action=band">Band</a>
   <a id="Tour" href="?action=tour">Tour</a>
   <a id="Shop" href="?action=shop">Shop</a>
+  <a href="?action=search">Search</a>
   
 </div>
 

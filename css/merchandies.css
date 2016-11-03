@@ -34,7 +34,7 @@ button {
     margin: 0 35%;
 }
     #Prijskaartje {
-        height: 0;
+        height: auto;
         background-color: lightgray;
         margin-left: 35%;
         padding-left: 5%;

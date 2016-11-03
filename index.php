@@ -15,7 +15,7 @@ include 'includes/funcs.php';
 
 
 // Assign value of page title to the smarty variable 'title', usually the value comes from a database
-$templateParser->assign('title', 'Titeltje');
+$templateParser->assign('title', 'Side 2 Side');
 
 // Display template: output html
 $templateParser->display('head.tpl');
@@ -49,36 +49,12 @@ break;
         include('model/select_shop.php');
         $templateParser->assign('result4',$result4);
         $templateParser->display('shop.tpl');
-
-//$page=isset($_GET['page'])?$_GET['page']:'home';
-//$templateParser->assign('page',$page);
-//$templateParser->display('active.tpl');
-
-
-//switch ($page) {
-//        case "home";
-//        $templateParser->display('active.tpl');
-  //          $templateParser->display('index.php');
- //       break;
- //       case "Band";
-//        $templateParser->display('active.tpl');
-  //          $templateParser->display('Band.tpl');
-    //    break;
-      //  case "Tour";
-        //$templateParser->display('active.tpl');
-          //  $templateParser->display('Tour.tpl');
-//        break;
-  //      case "Shop";
-    //    $templateParser->display('active.tpl');
-      //      $templateParser->display('Shop.tpl');
-        //break;
-//        case "Search";
-  //      $templateParser->display('active.tpl');
-//            $templateParser->display('Serach.tpl');
-//        break;
-//}
-
-
+break;
+    case 'search':
+        $templateParser->display('search.tpl');
+break;
+    case 'admin':
+        include('model/Admin.php');
 }
 
 $templateParser->assign('footer', 'Made By Bas Vugts <br>In cooperation With MediaCollege Amsterdam <br>
@@ -86,6 +62,3 @@ School-Project 2016-2017');
 //de footer
 $templateParser->display('footer.tpl');
 ?>
-
-
-

@@ -4,11 +4,12 @@
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a id="Search" href="?action=search"><input type="text" class=serach-query placeholder="Search" autocomplete="off"></a>
+ 
   <a id="Home" href="index.php"><img id="LogoHeader" alt="Side2Side" src="image/Side2SidePhotoshopped4.png" </a>
   <a id="Band" href="?action=band">Band</a>
   <a id="Tour" href="?action=tour">Tour</a>
   <a id="Shop" href="?action=shop">Shop</a>
+  <a href="?action=search">Search</a>
   
 </div>
 
